@@ -1,43 +1,383 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="合同会社の役員報酬を決議する議事録をWEB上で入力してPDF保存できるようにしました。合同会社の役員報酬決定議事録の雛形（ひな形）やワードの書式フォーマットはもう不要。"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <title>WEB完結｜合同会社の役員報酬を決議する議事録｜雛形</title>
+    <meta name="Keywords" content="合同会社,役員報酬,フォーマット,作り方,テンプレート" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://keiei-support-plus-a.com/zeirishi-hiyou/houjinn_zei-keisann-simulation.css?882918229">
+    <link rel="stylesheet" href="%PUBLIC_URL%/style-public.css">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <style>
+
+    </style>
+
+    <link rel="shortcut icon" href="https://keiei-support-plus-a.com/images/favicon.ico"><!-- 他ページに合わせる -->
+    <!-- END FAVICON  -->
+
+    <meta property="og:site_name" content="WEB完結｜合同会社の役員報酬を決議する議事録｜雛形">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WEB完結｜合同会社の役員報酬を決議する議事録｜雛形">
+    <meta property="og:description" content="合同会社の役員報酬を決議する議事録をWEB上で入力してPDF保存できるようにしました。合同会社の役員報酬決定議事録の雛形（ひな形）やワードの書式フォーマットはもう不要。">
+    <meta property="og:url" content="https://keiei-support-plus-a.com/zeirishi-hiyou/goudou_gaisha-yakuinn_houshuu-gijirok">
+    <!-- <meta property="og:image" content="https:///hello.machiweb.site/keiei_support_plus_alpha/kessan_simulation/hero.png"> -->
+    <meta property="og:image" content="https://keiei-support-plus-a.com/zeirishi-hiyou/yakuinn_houshuu-kabunushi_soukai_gijiroku/img/hero.jpg?v=0921"><!-- この方法だったら FB 読み込んだ -->
+    <meta property="og:image:width" content="788" />
+    <meta property="og:image:height" content="841" />
+    <meta property="fb:app_id" content="273817884169729" >
+    <meta name="twitter:card" content="summary_large_image">
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111693528-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-111693528-4');
+    </script>
+    
+    <!-- Google Analytics end -->
+
+    <!-- SEO -->
+    <script type="application/ld+json">
+      [
+        {
+            "@context": "http://schema.org",
+            "@type" : "Article",
+            "headline" : "WEB完結｜合同会社の役員報酬を決議する議事録｜雛形",
+            "image" : "%PUBLIC_URL%/img/hero.jpg?v=0921",
+            "datePublished" : "2021-010-10 20:00:00",
+            "dateCreated":"2021-10-10 20:00:00",
+            "dateModified":"2021-10-10 20:00:00",
+            "url": "https://keiei-support-plus-a.com/zeirishi-hiyou/goudou_gaisha-yakuinn_houshuu-gijirok",
+            "creator": ["税理士法人経営サポートプラスアルファ"],
+            "keywords" :["合同会社","フォーマット","作り方","テンプレート"],
+            "publisher": {
+              "@type": "Organization",
+              "name": "税理士法人経営サポートプラスアルファ",
+              "logo": {
+              "@type": "ImageObject",
+              "url": "https://keiei-support-plus-a.com/kaisha-setsuritsu/images/header/logo_mark4.png"
+              }
+            },
+            "author": {
+              "@type": "Organization",
+              "name": "税理士法人経営サポートプラスアルファ",
+              "url":"https://keiei-support-plus-a.com/"
+            },
+            "articleBody" : "合同会社の役員報酬を決議する議事録をWEB上で入力してPDF保存できるようにしました。合同会社の役員報酬決定議事録の雛形（ひな形）やワードの書式フォーマットはもう不要。",
+            "mainEntityOfPage" : "True"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type":"BreadcrumbList",
+          "itemListElement":[
+              {   
+                "@type":"ListItem","position":1,
+                "item":"https://keiei-support-plus-a.com/zeirishi-hiyou/goudou_gaisha-yakuinn_houshuu-gijirok",
+                "name":"WEB完結｜合同会社の役員報酬を決議する議事録｜雛形"
+              }
+          ]
+        }
+      ]
+    </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <noscript>JavaScriptを有効にして再読み込みしてみてください</noscript>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <header>
+      <div class="header4">
+        <div class="header3">
+          WEB完結｜合同会社の役員報酬を決議する議事録｜雛形
+        </div>
+      </div>
+      <div class="header2">
+        <a target="_blank" href="https://keiei-support-plus-a.com/zeirishi-hiyou/kaishi_taishaku_taishouhyou" class="headlogo"></a>
+        <a target="_blank" href="https://keiei-support-plus-a.com/kaisha-setsuritsu/">会社設立の費用</a>
+        <a target="_blank" href="https://keiei-support-plus-a.com/zeirishi-hiyou/">税理士の費用</a>
+        <a target="_blank" href="https://keiei-support-plus-a.com/sougyou-yuushi/">創業融資サポート</a>
+        <a target="_blank" href="https://keiei-support-plus-a.com/">運営会社</a>
+      </div>
+    </header>
+    <div class="header_1st_h1">
+      <div id="title"></div><!-- Components Title で入れてる -->
+<!-- hero image -->
+      <div class="hovsko2">
+        <div class="hovsko hero-img">
+          <div class="illd">
+            <div class=""><img class="img-IE" src="%PUBLIC_URL%/img/hero.jpg?v=0921" alt="WEB完結｜合同会社の役員報酬を決議する議事録｜雛形"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+
+    <main>    
+    <h2>合同会社の役員報酬の支給ルール</h2>
+    <div class="desc2 no-border">
+      合同会社に限らずですが、役員報酬は<span class="red">定期同額給与</span>といいます。
+      <div class="sudeni">
+        <ul>
+          <li>定期同額給与とは？</li>
+          <li>①一定期間（会計期間の1期目、2期目という単位にて）</li>
+          <li>②同額で支給する給与</li>
+        </ul>
+      </div>
+      
+      であるもののことを言います。
+      <br></br>
+      <span class="red">
+        簡単に言うと「期中の役員報酬は同額で支給してください」「変更するならば、翌期から役員報酬の変更することは可能ですよ」ということになります。
+      </span>
+    </div>
+
+    <h2>合同会社の役員報酬の決定ルール</h2>
+    <div class="desc2 no-border">
+      <ul>
+        <li>✔役員報酬を決定した日</li>
+        <li>✔役員報酬を決定した議事録</li>
+      </ul>
+    </div>
+
+    <h3>役員報酬を決定した日</h3>
+    <div class="desc2 no-border">
+      役員報酬は、事業年度開始の日から3ヶ月以内に決定（変更）する必要があります。
+      <br><br>
+      事業年度開始の日が1月1日の場合には3月31日までに役員報酬の決定をすることになります。
+    </div>
+
+    <h3>役員報酬を決定した議事録</h3>
+    <div class="desc2 no-border">
+      合同会社の役員報酬決定に関して社員総会議事録や総社員の同意書などで、決議した記録を残す必要があります。
+    </div>
+
+
+    <h2>合同会社の役員報酬を決議する議事録をWEBで完結</h2>
+    <div class="goudou-info-box">
+      <div class="goudou-info-box-child">
+        <div class="top-text-content-grid-c-1">株式会社の<br>役員報酬 議事録</div>
+        <div class="top-text-content-grid-c-2">
+          <a href="https://keiei-support-plus-a.com/zeirishi-hiyou/yakuinn_houshuu-kabunushi_soukai_gijiroku/" target="_blank">
+            <div id="goudou-text"></div><!-- 改行タイミングをJSで処理して代入 -->
+            <img src="%PUBLIC_URL%/img/jump.png">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="desc2 no-border">
+      <span class="case-title">合同会社の場合は下記を利用下さい。</span>
+    </div>
+
+<!-- APP -->
+    <div class="simulation-wrap">
+        <div id="root"></div>
+    </div>
+
+    
+<!-- ▽▽footer sns▽▽ -->
+    <div class="footer_sns" >
+      <div class="sns_link">
+        <ul>
+          <li>
+            <div class="btn btn_facebook">
+              <a href="http://www.facebook.com/share.php?u=https://keiei-support-plus-a.com/zeirishi-hiyou/goudou_gaisha-yakuinn_houshuu-gijirok" rel="nofollow" target="_blank"><span>Facebookでシェア</span></a>
+            </div>
+          </li>
+          <li>
+            <div class="btn btn_twitter">
+              <a href="https://twitter.com/intent/tweet?text=%0A%23%E5%90%88%E5%90%8C%E4%BC%9A%E7%A4%BE%E3%81%AE%E5%BD%B9%E5%93%A1%E5%A0%B1%E9%85%AC%E3%82%92%E6%B1%BA%E8%AD%B0%E3%81%99%E3%82%8B%E8%AD%B0%E4%BA%8B%E9%8C%B2%0Ahttps%3A%2F%2Fkeiei-support-plus-a.com%2Fzeirishi-hiyou%2Fgoudou_gaisha-yakuinn_houshuu-gijirok%2F" target="_blank"><span>Twitterでツイート</span></a>
+              <!--
+              https://twitter.com/intent/tweet?text=決算予測シミュレーション
+              #決算予測
+              https:///hello.machiweb.site/keiei_support_plus_alpha/kessan_simulation/
+              -->
+            </div>
+          </li>
+          <li>
+            <div class="btn btn_line">
+              <!-- <a href="http://line.me/R/msg/text/?[法人化シミュレーション][https%3A%2F%2Fkeiei-support-plus-a.com%2Fkaisha-setsuritsu%2Fhoujinka-simulation]" target="_blank" rel="nofollow"><span>LINEで送る</span></a> -->
+              <a href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fkeiei-support-plus-a.com%2Fzeirishi-hiyou%2Fgoudou_gaisha-yakuinn_houshuu-gijirok%2F" target="_blank" rel="nofollow"><span>LINEで送る</span></a>
+            </div>
+          </li>
+          <li>
+            <div class="btn btn_hatena">
+              <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3A%2F%2Fkeiei-support-plus-a.com%2Fzeirishi-hiyou%2Fgoudou_gaisha-yakuinn_houshuu-gijirok&title=WEB完結｜合同会社の役員報酬を決議する議事録｜雛形" target="_blank"><span>はてなブックマーク</span></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- △△footer sns△△ -->
+    
+    <div class="goudou-info-box">
+      <div class="goudou-info-box-child">
+        <div class="top-text-content-grid-c-1">株式会社の<br>役員報酬 議事録</div>
+        <div class="top-text-content-grid-c-2">
+          <a href="https://keiei-support-plus-a.com/zeirishi-hiyou/yakuinn_houshuu-kabunushi_soukai_gijiroku/" target="_blank">
+            <div id="goudou-text-2"></div><!-- 改行タイミングをJSで処理して代入 -->
+            <img src="%PUBLIC_URL%/img/jump.png">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <h2>合同会社の役員報酬の議事録の雛形をなぜWEB完結？</h2>
+    <div class="desc2 no-border">
+      合同会社を設立する方の中でも「副業で合同会社を設立した方」や「とりあえず法人化するため」「手続きをなるべく簡単にしたいから」「事業規模がそんなに大きくないから」といった理由の方々がいらっしゃいます。
+      <br><br>
+      そうなると仕事しながら、次の売上見込みを作りながらというお忙しい方や、こういった事務的手続きには時間を割いてられないこともあろうかと思います。
+      <br><br>
+      私達は税理士法人なので、顧問契約した合同会社のお客様の役員報酬決定に関しては議事録は私達が丸投げで作成を代行してしまいます。
+      <br><br>
+      しかし、税理士との顧問契約されていない方もごく僅かですが一定程度いらっしゃるとも考えています。
+      <br><br>
+      だからこそ、パソコンではもちろんのことスマホでも「さくっと簡単に」作成が出来る
+      <br><br>
+      合同会社の役員報酬決定の議事録をWEBで作成出来るようにしました。
+      <br><br>
+      議事録などのフォーマットや雛形をワード、エクセル、ドキュメントで作成してパソコンに保存する必要もありません。
+      <br><br>
+      WEBで簡単入力で作成してPDF保存すれば、その方が簡単だし、助かるのではないかと思いこのページを作りました。
+      <br><br>
+      他の便利ツールも順次増やしていきますので他のページも見て活用してみてください。
+      <br><br>
+      お使い頂き、このページを通して貢献出来れば嬉しい限りですし、いつかこのページをお使いの経営者様と出会えて貢献出来る機会があれば、なお嬉しいです。
+      <br/><br/>
+      最後までお読み頂きありがとうございます。
+      <br/><br/>
+      株式会社経営サポートプラスアルファホールディングス<br>
+      税理士法人経営サポートプラスアルファ
+      <br/><br/>
+      グループ代表　石堂雄太<br>
+      代表税理士　高井亮成
+      <br/><br/>
+      <br/><br/>
+    </div>
+    
+    <div class="yudo">
+      <div class="yudo1">
+        <a class="linkBut" href="https://keiei-support-plus-a.com/zeirishi-hiyou/yakuinn_houshuu-simulation" target="_blank">
+          <div class="linkArrow linkArrowR"></div>
+          <div class="linkButDesc">役員報酬シミュレーション</div>
+        </a></div>
+      <div class="yudo1">
+        <a class="linkBut" href="https://keiei-support-plus-a.com/zeirishi-hiyou/" target="_blank">
+          <div class="linkArrow linkArrowR"></div>
+          <div class="linkButDesc">税理士の費用はいくら？</div>
+        </a>
+      </div>
+    </div>
+
+    
+    
+    <h2>その他の税金計算シミュレーション</h2>
+    <div class="extlink">
+      <h4>＜起業する方・個人事業者の方向け＞</h4>
+      <a target="_blank" href="https://keiei-support-plus-a.com/kaisha-setsuritsu/houjinka-simulation" class="linkBut arrowColorA">
+        <div class="linkButDesc">法人化<br>シミュレーション</div>
+        <div class="linkArrow"></div>
+      </a>
+      <a target="_blank" href="https://keiei-support-plus-a.com/kaisha-setsuritsu/kojin_jigyounushi-zeikin_keisan-simulation-kakutei_shinkoku" class="linkBut arrowColorA">
+        <div class="linkButDesc">個人事業主の税金計算<br>シミュレーション</div>
+        <div class="linkArrow"></div>
+      </a>
+      <h4>＜法人化している方向け＞</h4>
+      <a target="_blank" href="https://keiei-support-plus-a.com/zeirishi-hiyou/yakuinn_houshuu-simulation" class="linkBut arrowColorB">
+        <div class="linkButDesc">役員報酬最適化<br>シミュレーション</div>
+        <div class="linkArrow"></div>
+      </a>
+      <a target="_blank" href="https://keiei-support-plus-a.com/zeirishi-hiyou/houjinn_zei-keisann-simulation" class="linkBut arrowColorB">
+        <div class="linkButDesc">法人税計算<br>シミュレーション</div>
+        <div class="linkArrow"></div>
+      </a>
+    </div>
+    
+    </main>
+    <footer>
+    <div class="footTit">
+    株式会社 経営サポートプラスアルファホールディングス<br>
+    税理士法人経営サポートプラスアルファ<br>
+    <br>
+    〒170-0013<br>
+    東京都豊島区東池袋一丁目10番1号<br>
+    住友池袋駅前ビル4階<br>
+    TEL : 03-5953-5585<br>
+    FAX : 03-5953-5586<br>
+    </div>
+    <hr>
+    <div class="multicol">
+    
+      <div class="columB">
+        ❚当社情報<br>
+        <a href="https://keiei-support-plus-a.com/" target="_blank">運営会社</a><br>
+        <a href="https://keiei-support-plus-a.com/recruit/lp/" target="_blank">採用情報</a><br>
+        <a href="https://keiei-support-plus-a.com/privacy-policy/" target="_blank">プライバシーポリシー</a><br>
+        <a href="https://keiei-support-plus-a.com/tradelaw/" target="_blank">特定商取引法に基づく表示</a><br>
+      </div>
+      <div class="columB">
+        ❚当社サービス<br>
+        <a href="https://keiei-support-plus-a.com/kaisha-setsuritsu/" target="_blank">会社設立の費用</a><br>
+        <a href="https://keiei-support-plus-a.com/zeirishi-hiyou/" target="_blank">税理士の費用</a><br>
+        <a href="https://keiei-support-plus-a.com/sougyou-yuushi/" target="_blank">創業融資サポート</a><br>
+        <a href="https://keiei-support-plus-a.com/naisou-kouji-lease/" target="_blank">内装工事リース</a><br>
+        <a href="https://keiei-support-plus-a.com/eigyoukyoka-gyouseishoshi-houshuu/" target="_blank">営業許可の費用</a><br>
+        <a href="https://keiei-support-plus-a.com/touki-hiyou/" target="_blank">登記の費用</a><br>
+        <a href="https://keiei-support-plus-a.com/homepage-sakusei/" target="_blank">ホームページ作成の費用</a><br>
+        <a href="https://keiei-support-plus-a.com/kaisha-setsuritsu/kaisha-inkan/" target="_blank">法人印3本セットの費用</a><br>
+      </div>
+    
+      <div class="columB">
+        ❚便利ツール<br>
+        <a href="https://keiei-support-plus-a.com/web-tool/" target="_blank" class="text-decolation">オンラインツール一覧</a><br>
+        <a href="https://keiei-support-plus-a.com/kaisha-setsuritsu/kojin_jigyounushi-zeikin_keisan-simulation-kakutei_shinkoku" target="_blank">個人事業主の税金計算シミュレーション</a><br>
+        <a href="https://keiei-support-plus-a.com/kaisha-setsuritsu/houjinka-simulation" target="_blank">法人化シミュレーション</a><br>
+        <a href="https://keiei-support-plus-a.com/zeirishi-hiyou/yakuinn_houshuu-simulation" target="_blank">役員報酬シミュレーション</a><br>
+        <a href="https://keiei-support-plus-a.com/zeirishi-hiyou/houjinn_zei-keisann-simulation" target="_blank">法人税計算シミュレーション</a><br>
+        <a href="https://keiei-support-plus-a.com/kaikei-pippa/kessann_yosoku-simulation" target="_blank">決算予測シミュレーション</a><br>
+        <a href="https://keiei-support-plus-a.com/sougyou-yuushi/kouko-hennsai_simulation" target="_blank">公庫銀行借入金利返済シミュレーション</a><br>
+        <a href="https://keiei-support-plus-a.com/zeirishi-hiyou/kaishi_taishaku_taishouhyou" target="_blank">開始貸借対照表の作成（オンライン）</a><br>
+        <a href="https://keiei-support-plus-a.com/zeirishi-hiyou/yakuinn_houshuu-kabunushi_soukai_gijiroku" target="_blank">株主総会議事録の作成（株式会社）</a><br>
+        <a href="https://keiei-support-plus-a.com/zeirishi-hiyou/goudou_gaisha-yakuinn_houshuu-gijirok" target="_blank">株主総会議事録の作成（合同会社）</a><br>
+      </div>
+      <div class="columB">
+        ❚運営メディア<br>
+        <a href="https://keiei-support-plus-a.com/kaisha-setsuritsu/media/" target="_blank">会社設立プロ</a><br>
+        <a href="https://keiei-support-plus-a.com/zeirishi-hiyou/media/" target="_blank">税理士メディア</a><br>
+        <a href="https://keiei-support-plus-a.com/sougyou-yuushi/media/" target="_blank">創業融資メディア</a><br>
+        <a href="https://keiei-support-plus-a.com/naisou-kouji-lease/media/" target="_blank">内装工事メディア</a><br>
+        <a href="https://keiei-support-plus-a.com/eigyoukyoka-gyouseishoshi-houshuu/media/" target="_blank">営業許可メディア</a><br>
+        <a href="https://keiei-support-plus-a.com/touki-hiyou/media" target="_blank">登記メディア</a><br>
+        <a href="https://keiei-support-plus-a.com/homepage-sakusei/media" target="_blank">ホームページ作成メディア</a><br>
+        <a href="https://kaisha-keiei.co.jp/kaisha-setsuritsu/media/" target="_blank">会社設立メディア</a><br>
+        <a href="https://kaisha-setsuritsu.co.jp/" target="_blank">会社設立バイブル</a><br>
+        <a href="https://kaisha-setsuritsu.site/" target="_blank">会社設立ラボ</a><br>
+        <a href="https://kaisha-keiei-ksp.com/kaisha-setsuritsu/media/" target="_blank">会社設立ブログ</a><br>
+      </div>
+      <div class="footcopy">&copy; 経営サポートプラスアルファ</div>
+    </div>
+    
+    </footer>
+
+    <script type="text/javascript" src="%PUBLIC_URL%/mikan.js"></script>
+    <script>
+        var textElement = document.getElementById('goudou-text');
+        textElement.innerHTML = Mikan('株式会社の役員報酬決定の議事録をオンラインで作成する方はコチラ');
+        var textElementSecond = document.getElementById('goudou-text-2');
+        textElementSecond.innerHTML = Mikan('株式会社の役員報酬決定の議事録をオンラインで作成する方はコチラ');
+    </script>
+
+    <style>
+      .text-decolation{
+        text-decoration: underline !important;
+      }
+    </style>
   </body>
 </html>

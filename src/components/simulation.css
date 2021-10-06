@@ -1,0 +1,1057 @@
+:root{
+    --toastify-toast-width: 300px;
+}
+.Toastify__toast-body > div:nth-child(2){
+    font-size: 1.2rem;
+}
+@media screen and (max-width:480px){
+    .Toastify__toast-body > div:nth-child(2){
+        font-size: .8rem;
+    }
+}
+
+
+main{
+    display:block; /* IE対策に追加 */
+}
+.table-top-notification-mark-area{
+    margin-bottom: .5rem;
+}
+.table-top-notification-mark{
+    margin-right: .5rem;
+}
+.sudeni > ul >li, .desc2.no-border> ul >li{
+    margin: .5rem 0;
+}
+.simulation-wrap{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.top-text-content-grid{
+    display: grid;
+    grid-template-columns: 4fr 5fr .5fr;
+    grid-gap: 2rem;
+    margin: 2rem .5rem;
+    padding: 1rem 2rem;
+    background-color: #0e2f92;
+    border-radius: .5rem;
+}
+.ksp-img{
+    background-image: url(./../assets/image/ksp-img.jpg);
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 160px;
+    border-radius: .5rem;
+}
+.cost-img{
+    background-image: url(./../assets/image/money.jpg);
+    /*background-color: white;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;*/
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-color: white;
+    height: 160px;
+    border-radius: .5rem;
+}
+.content-title{
+    font-size: 1.4rem;
+}
+.top-text-content-grid > div:nth-child(2){
+    color:white;
+    font-size:1.65rem;
+    display: flex;
+    align-items: center;
+}
+.top-text-content-grid > div:nth-child(3){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-text-content-grid-2{
+    background-color: #d49b2d;
+}
+.top-text-content-grid-2 > div > img{
+    max-width: 160px;
+}
+
+/*TOAST*/
+.Toastify__toast-container--top-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*INPUT*/
+.simulation-form-upper{
+    position: relative;
+}
+.simulation-form-upper{
+    padding: 1rem 3rem;
+    background-color: #d7e1ff;
+}
+.total{
+    font-weight: bold;
+    pointer-events : none;
+}
+.number-error-label{
+    float: right;
+}
+.number-error-label > p {
+    font-size: 1.2rem;
+    margin-top: -10px;
+}
+.number-error-label > p > span{
+    margin: 0 1rem;
+}
+
+.input-box{
+    display: grid;
+    grid-template-columns: 5fr 280px;
+    margin: 1rem 0;
+}
+.input-box-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 280px;
+    margin: 1rem 0; 
+    grid-gap: .1rem;
+    position: relative;
+}
+/*
+.add-content-box{
+    position: relative;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes fade{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+.add-content-box::after{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
+    border: 1px #0063ff solid;
+    border-radius: .3rem;
+}
+*/
+.unitLabel-1{
+    margin-top:2.2rem;
+    position: relative;
+}
+.unitLabel-2{
+    margin-top:1.8rem;
+    position: relative;
+}
+.unitLabel{
+    position: absolute;
+    top: -1.5rem;
+    right: 0px;
+    color: #575757;
+}
+.input-box > div:nth-child(1), 
+.input-box-3 > div:nth-child(-n+3),
+.help-icon-content-position{
+    display: flex;
+    align-items: center;
+}
+.input-box > div > div:first-child, 
+.input-box-3 > div > div:first-child{
+    font-size:1.2rem;
+}
+.input-box-3 > div:nth-child(2),
+.input-box-3 > div:nth-child(5),
+.input-box-3 > div:nth-child(8){
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+.inputFrame{
+    position: relative;
+}
+input{
+    font-size: 1.2rem;
+    height: 2.5rem;
+    text-align: right;
+    border-radius: .3rem;
+    border: 1px solid rgba(0,0,255,.4196078431372549);
+    padding: .3rem 2rem .3rem .5rem;
+}
+input[type="text"], input[type="number"]{
+    width: 100%;
+}
+.input-date{
+    font-size: 1.2rem;
+    height: 2.5rem;
+    text-align: right;
+    border-radius: .3rem;
+    border: 1px solid rgba(0,0,255,.4196078431372549);
+    padding: .3rem 2rem .3rem .5rem;
+    background-color: white;
+}
+.clearButton{
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    right: 8px;
+    top: 12px;
+    background: url(./../assets/image/x.png) no-repeat left center;
+    cursor: pointer;	
+}
+.input-box-c-1 > div:first-child{
+    position: relative;
+}
+.input-box-3-helpicon{
+    position: relative;
+}
+.help-icon{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102.028 101.902"><defs><style>.cls-1{fill:gray; opacity:.5}</style></defs><path class="cls-1" d="M51.267,1.233a50,50,0,1,0,50,50A50,50,0,0,0,51.267,1.233Zm4.174,86.02a7.226,7.226,0,0,1-5.316,2.134,7.049,7.049,0,0,1-5.264-2.134,8.06,8.06,0,0,1,0-10.832,7.052,7.052,0,0,1,5.264-2.138,7.229,7.229,0,0,1,5.316,2.138,7.937,7.937,0,0,1,0,10.832Zm18.93-48.889a20.01,20.01,0,0,1-3.578,4.771,68.315,68.315,0,0,1-5.665,4.819,52.425,52.425,0,0,0-7.649,7.055,10.948,10.948,0,0,0-2.487,7.254,11.39,11.39,0,0,0,.1,1.787H44.958a12.584,12.584,0,0,1-.2-2.584,13.618,13.618,0,0,1,2.931-8.745,50.874,50.874,0,0,1,8.4-7.949,58.381,58.381,0,0,0,6.558-6.06,8.051,8.051,0,0,0,2.086-5.462A9.5,9.5,0,0,0,61.106,25.4q-3.633-2.88-10.383-2.882-9.443,0-17.49,8.446L26.675,24.9Q37.21,13.081,52.013,13.079q10.832,0,17.34,5.066t6.506,14.11A12.575,12.575,0,0,1,74.371,38.364Z"/></svg>') no-repeat left center;    
+    /*opacity: 0.3;*/
+    margin: 0 0 0 7px;
+    right: -2rem;
+    top: .45rem;
+}
+.help-icon-child{
+    position: absolute;
+    background-color: #757575;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    left: 2.2rem;
+    width: 300px;
+    letter-spacing: 0.05rem;
+    z-index: 2;
+}
+.help-icon-child::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    left: -10px;
+    top: 20px;
+    border-right: 10px solid #757575;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.help-icon-child.top1{
+    top:-1.4rem;
+}
+.trash-content-one{
+    position: absolute;
+    right: -2.4rem;
+    top: 3rem;
+}
+.content-trash-icon{
+    width: 1.5rem;
+    position: absolute;
+    right: -2.4rem;
+    top: 3rem;
+}
+.content-trash-icon-2{
+    width: 1.5rem;
+    position: absolute;
+    right: -2.4rem;
+    top: 1.6rem;
+}
+.select-first{
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border-radius: .3rem;
+    width: 100%;
+    border: 1px solid rgba(0,0,255,.4196078431372549);
+    background-color: white;
+}
+.select-first.one {
+    text-indent: 90px;
+}
+.select-first.two {
+    text-indent: 105px;
+}
+.select-first.zero {
+    text-indent: 115px;
+}
+/*
+select > option{
+    text-align: center;
+}
+*/
+.add-content-first-box{
+    text-align: center;
+}
+#add-content-first, #add-content-second{
+    font-size: 1rem;
+    font-weight: bold;
+    border: 0px;
+    padding: 0.5rem 2rem;
+    border-radius: .3rem;
+    color: white;
+    background-color: darkgray;
+    width: 280px;
+}
+.margin-h{
+    margin: 2rem 0;
+}
+.react-datepicker__month .react-datepicker__month-text{
+    text-align: center;
+}
+
+
+
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.red{
+    color: red !important;
+}
+.blue{
+    color:blue;
+}
+.white{
+    color:white !important;
+}
+.black{
+    color:black;
+}
+.bold{
+    font-weight: bold;
+}
+.hidden{
+    display: none;
+}
+.nowrap{
+    white-space: nowrap;
+}
+
+.simulation-input-area{
+    width: min(95%, 95vw);
+    /*overflow-x: scroll;*/
+    margin: 0 auto;
+}
+
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button,
+.input-number::-webkit-outer-spin-button,
+.input-number::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] , .input-number{
+    -moz-appearance:textfield;
+    font-size: 16px;
+}
+.input-require::after{
+    content: " *";
+    color: red;
+    position: absolute;
+}
+.inputNotificationText{
+    text-align: right;
+    margin-top: -1rem;
+    color: red;
+}
+.inputAlertArea{
+    border-color: red;
+}
+.margin-bottom-initial{
+    margin-bottom: 1rem;
+}
+
+
+/* PDF Preview */
+.hiddenPreview{
+    overflow: hidden;
+    height: .001px;
+}
+#preview-2{
+    width: 210mm;
+    min-height: 297mm;
+    /*border: 1px solid;*/
+    padding: 2rem 4rem;
+}
+.previewWrap{
+    /*white-space: nowrap;
+    overflow-x: auto;*/
+    font-family: serif;
+    font-size: 14px;
+    letter-spacing: .09rem;
+}
+.previewWrap p{
+    line-height: 1.4rem;
+}
+#preview{
+    /*padding: 5rem 3rem;*/
+    width: 800px;
+}
+.pdf-content-area{
+    padding: 0 1.5rem;
+    margin-top: 2rem;
+}
+.pdf-content-area > p{
+    margin: 1rem 0;
+    white-space: initial;
+}
+.pdf-content-area > ul{
+    margin: 2rem 5rem;
+}
+.pdf-content-area > ul > li {
+    margin: .3rem 0;
+}
+.li-grid{
+    display: grid;
+    grid-template-columns: 3.8fr 1fr;
+    grid-gap:1rem;
+}
+.li-grid > div:nth-child(2){
+    text-align: right;
+    white-space: nowrap;
+}
+#re-html-area-1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 62%;
+}
+.pdf-loop-content-area{
+   
+}
+.preview-label{
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    color: red;
+    font-size: 1.2rem;
+}
+.pdf-preview{
+    position: relative;
+    padding: 2rem 1rem;
+    background-color: #e8e8e8;
+    padding-bottom: 4rem;
+}
+.pdf-preview-title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: inline;
+    box-shadow: inset 0 1.25rem #e8e8e8, inset 0 -0.1rem black, inset 0 -0.25rem #e8e8e8, inset 0 -0.375rem black;
+    padding-bottom: .7rem;
+    letter-spacing:.8rem;
+    padding-left: .8rem;
+}
+.pdf-preview-title-print{
+    box-shadow: initial !important;
+    display: inline-block;
+    border-bottom: 4px double black;
+    padding-bottom: 2px;
+    padding-left: .8rem;
+}
+.pdf-preview-title-parent{
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+.pdf-preview-title-parent > p{
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: .5rem;
+}
+.pdf-preview-date > p{
+    text-align: center;
+}
+.pdf-preview-date{
+    margin-bottom:1.5rem;
+}
+.pdf-gian{
+    text-align: center;
+    margin-bottom: 1.2rem !important;
+    margin-top: 1.2rem !important;
+}
+.boardObjList{
+    display: flex;
+    /*padding-left: 135px;*/
+    margin: .8rem 0;
+}
+.boardObjList > div:nth-child(1){
+    min-width: 90px;
+}
+.boardObjList > div:nth-child(2){
+    min-width: 130px;
+}
+.boardObjList > div:nth-child(3){
+    min-width: 160px;
+    /*text-align: right;*/
+}
+/*
+.boardObjList:last-child{
+    margin-bottom: 2rem;
+}
+*/
+.boardObjList-label-1{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+.boardObjList-label-1 > div:nth-child(2){
+    text-align: right;
+    padding-right: .3rem;
+}
+.commpayObjList{
+    display: flex;
+    margin: 1rem 0;
+    margin-left: 50%;
+}
+.pdf-footer-date{
+    margin-top: 2rem;
+}
+.commpayObjList > div:nth-child(1){
+    min-width: 80px;
+}
+.commpayObjList > div:nth-child(2){
+    min-width: 120px;
+}
+.commpayObjList > div:nth-child(3){
+    min-width: 1.5rem;
+}
+.commpayObjList > div:nth-child(3) > img{
+    width: 1.2rem;
+    opacity: .4;
+    /*padding-bottom: .25rem;*/
+}
+.pdf-page-break-margin{
+    margin-bottom: 60mm;
+}
+
+
+.rowEnd{
+    margin-bottom: 3rem;
+}
+
+.tg{
+    width: 800px;
+    border: 1px solid black;
+    margin:0 auto;
+}
+.tg td{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    padding:5px 10px;
+    word-break:normal;
+}
+.tg th{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    padding:5px 5px;
+    word-break:normal;
+}
+.pdf-table-area > table > tbody > tr:nth-child(1) > td:nth-child(1),
+.pdf-table-area > table > tbody > tr:nth-child(1) > td:nth-child(3){
+    width:250px;
+}
+.row-space{
+    padding: 0 35px !important;
+}
+.row-space-kakko{
+    padding-left: 25px !important;
+}
+.letter-space{
+    -moz-text-align-last: justify;
+    text-align-last: justify;
+    text-justify:inter-ideograph;
+}
+.row-tatal-space{
+    padding: 0 16px !important;
+}
+.row-space-bu{
+    padding-right: 80px !important;
+    padding-left: 80px !important;
+}
+.row-space-kamoku{
+    letter-spacing: 1rem;
+}
+
+
+/*プレビュー枠線*/
+.tg th,
+.pdf-table-area > table > tbody > tr:nth-child(2) > td:nth-child(n+3),
+.pdf-table-area > table > tbody > tr:nth-child(3) > td:nth-child(n+3){
+    border-top: 0px;
+}
+.tg th,
+.pdf-table-area > table > tbody > tr:nth-child(3) > td:nth-child(3),
+.pdf-table-area > table > tbody > tr:nth-child(15) > td:nth-child(n+3){
+    border-bottom: 0px;
+}
+.tg{
+    border-right: 0px;
+}
+.tg th,
+.pdf-table-area > table > tbody > tr:nth-child(n+1) > td:nth-child(n+2){
+    border-left: 0px;
+}
+
+.pdf-table-area > table > tbody > tr:nth-of-type(n+2):nth-of-type(-n+15) > td:nth-child(1){
+    /*border-bottom: 1px solid #dcdcdc;*/
+    border-bottom: 0px;
+    border-top: 0px;
+}
+.pdf-table-area > table > tbody > tr:nth-of-type(n+2):nth-of-type(-n+15) > td:nth-child(2){
+    border-bottom: 0px;
+    border-top: 0px;
+}
+.pdf-table-area > table > tbody > tr:nth-of-type(n+5):nth-of-type(-n+14) > td:nth-child(n+3){
+    border-bottom: 0px;
+    border-top: 0px;
+}
+.tableRowhidden{
+    /*visibility: collapse;*/
+    display: none;
+}
+.tableRowhiddenReverse{
+    visibility: initial;
+}
+.border-top{
+    border-top: 1px solid black !important;
+}
+.border-top-none{
+    border-top: 0px solid black !important;
+}
+.border-bottom-none{
+    border-bottom: 0px solid black !important;
+}
+.unavailable{
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+
+/*PDF*/
+.pdf-area{
+    overflow: hidden;
+    height: .001px;
+    width: 90vw;
+    overflow-x: scroll;
+}
+.pdfArea{
+    padding: .5rem 2rem;
+}
+.pdfAreaTitile{
+    font-size: 1.5rem;
+    margin-left: 0px;
+}
+
+/*関係ない*/
+.pdfInputArea{
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    grid-gap: 2rem;
+
+    display: -ms-grid;
+    -ms-grid-columns: 150px auto 150px;
+    -ms-grid-rows:auto auto auto;
+}
+.pdfInputArea-cul-1{
+    grid-column: 1 ;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+}
+.pdfInputArea-cul-2{
+    grid-column: 2 ;
+    grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+}
+.pdfInputArea-cul-3{
+    grid-column: 3 ;
+    grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-row: 1;
+}
+.pdfInputArea > div > select{
+    color: black;
+}
+.input-label{
+    display: block;
+}
+.pdf-button-area{
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+.pdf-save-button-area{
+    margin:2rem;
+}
+.createPreviewButton{
+    padding: .9rem 2rem;
+}
+.pdfInputArea > div > select, .pdfInputArea > div > input, .calenderArea > div > div > button {
+    height: 50px;
+}
+#select_unit{
+    width: 150px;
+    font-size: 1rem;
+}
+#clientName{
+    width: 100%;
+    padding: 0 1rem;
+}
+.calenderArea{
+    /*position: relative;*/
+}
+.react-datepicker__header > div{
+    text-align: center;
+}
+.react-datepicker__header > div > select{
+    font-size: 1rem;
+    margin: 0 .5rem;
+    padding: 0 .5rem;
+}
+.react-datepicker__header > div > select:nth-child(2){
+    margin-right: 0px;
+}
+.date-picker-button{
+    font-size: 1.2rem;
+    height: 2.5rem;
+    text-align: right;
+    border-radius: .3rem;
+    border: 1px solid rgba(0,0,255,.4196078431372549);
+    padding: .3rem 2rem .3rem .5rem;
+    background-color: white;
+    width: 100%;
+}
+.date-picker-button:after{
+    content: url(./../assets/image/down-arrow.svg);
+    margin-left: .8rem;
+    margin-right: .8rem;
+    /*vertical-align: -8%;*/
+    display:inline-block;
+}
+.calenderAreaChild{
+    position: absolute;
+    background-image: url(./../assets/image/down-arrow.svg);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 13px;
+    right: 4px;
+    top: 17px;
+}
+.calenderArea > div > div > button{
+    width: 170px;
+    font-size: 1rem;
+}
+#clientName::placeholder {
+    font-size: 1rem;
+}
+.pdfInputArea > div > .one{
+    text-indent: 60px;
+}
+.pdfInputArea > div > .two{
+    text-indent: 50px;
+}
+.pdfInputArea > div > .three{
+    text-indent: 40px;
+}
+#select_unit, #clientName, .calenderArea > div > div > button{
+    border: 1px solid black;
+    border-radius: .3rem;
+    background-color: white;
+}
+#exportPdf, .createPreviewButton{
+    font-size: 1.5rem;
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+    border: 0px;
+    background-color: #0d82df;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#exportPdf:hover{
+    opacity: 0.7;
+}
+.a4 {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 1cm;
+}
+.pdf-content{
+    width: 277mm;
+    height: 170mm;
+    /*border: 1px solid #0e2f92;*/
+    /*padding: 2cm;*/
+    position: relative;
+    font-size: 14px !important;
+}
+.pdf-title{
+    font-size: 36px;
+    text-align: center;
+    margin: 1rem 0;
+    margin-bottom: 3rem;
+}
+.pdf-area-flex{
+    margin: .3rem .5rem;
+    display: flex;
+}
+.pdf-area-flex-right{
+    margin-left: auto;
+}
+.pdf-table{
+    width: 100%;
+}
+div.pdf-table-area > table > tbody > tr:nth-child(2) > td:nth-child(1){
+    border-bottom: 0px;
+}
+div.pdf-table-area > table > tbody > tr:nth-child(3) > td:nth-child(1){
+    border-top: 0px;
+}
+.pdf-date{
+    text-align: right;
+    margin: 1rem;
+}
+
+
+
+/*PDF Footer*/
+.bottom-label{
+    margin-top: 2rem;
+    text-align: center;
+}
+.bottom-label > img {
+    width: 50px;
+    margin-right: 1rem;
+}
+
+
+
+
+
+.top-mobile-about-box{
+    position: relative;
+    /*padding: 0 1.7rem;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* MOBILE */
+@media(max-width:480px){
+    .table-top-notification-mark-area{
+        margin-left: .5rem;
+    }
+    .simulation-wrap{
+        margin: 2rem 0;
+        margin-bottom: 0px;
+    }
+    .top-text-content-grid{
+        grid-template-columns: 1fr;
+        grid-gap: .5rem;
+        padding: 1rem 1rem;
+    }
+    .top-text-content-grid > div:nth-child(2){
+        font-size: 5.4vw;
+        display: initial;
+    }
+    .top-text-content-grid > div:nth-child(3){
+        display: none;
+    }
+    .linkArrowAbsolute{
+        position: absolute;
+        right: 0px;
+        bottom: .3rem;
+    }
+    .cost-img {
+        max-width: 93%;
+    }
+    .react-datepicker__header > div > select{
+        margin: 0 .2rem;
+        padding: 0 .3rem;
+    }
+    .pdf-preview-date > p{
+        font-size: .8rem;
+    }
+    .inputNotificationText{
+        font-size: .7rem;
+        margin-top: -0.7rem;
+    }
+
+    
+    .pdf-preview{
+        /*display: block;*/
+        overflow-x: scroll;
+        white-space: nowrap;
+        -webkit-text-size-adjust: 100%;
+    }
+    .preview-label{
+        right: 1rem;
+        top: .2rem;
+    }
+    .pdfArea > .pdf-button-area{
+        margin-top: 1rem;
+    }
+
+    .simulation-form-upper{
+        margin: 0px;
+        padding: 1rem .5rem;
+    }
+    .input-box{
+        grid-template-columns: 4fr 200px;
+    }
+    .input-box-3{
+        grid-template-columns: 1fr 1.2fr 200px;
+    }
+    .input-box-3 > .input-box-c-1{
+        margin-right: 0rem;
+    }
+    .input-box-3 > div:nth-child(2),
+    .input-box-3 > div:nth-child(5),
+    .input-box-3 > div:nth-child(8){
+        margin-right: 1.5rem;
+    }
+    .input-box > div > div:first-child, 
+    .input-box-3 > div > div:first-child {
+        font-size:.8rem;
+    }
+    .number-error-label > p {
+        font-size: 1rem;
+    }
+    .help-icon-child{
+        width: 50vw;
+    }
+    .simulation-form-upper > div:nth-child(9) > div:nth-child(2) > div > p > span,
+    .simulation-form-upper > div:nth-child(9) > div:nth-child(5) > div > p > span,
+    .simulation-form-upper > div:nth-child(9) > div:nth-child(8) > div > p > span{
+        width: 40vw;
+    }
+    .help-icon{
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        right: -20px;
+        top: 3px;
+    }
+    .simulation-form-upper > div:nth-child(9) > div:nth-child(8) > div > p,
+    .input-require-3danme > p{
+        top: 12px;
+    }
+    .simulation-form-upper > div:nth-child(19) > div.input-box-c-1 > div > div,
+    .simulation-form-upper > div:nth-child(10) > div.input-box-c-1 > div > div,
+    .simulation-form-upper > div:nth-child(4) > div.input-box-c-1 > div > div,
+    .simulation-form-upper > div:nth-child(5) > div.input-box-c-1 > div > div,
+    .simulation-form-upper > div:nth-child(8) > div.input-box-c-1 > div > div{
+        top: 12px;
+    }
+    .input-box-c-1{
+        margin-right: 1.2rem;
+    }
+
+    .simulation-form-upper > div:nth-child(8) > div.input-box-c-1 > div > div,
+    .simulation-form-upper > div:nth-child(10) > div.input-box-c-1 > div > div,
+    .simulation-form-upper > div:nth-child(19) > div.input-box-c-1 > div > div{
+        right: -16px;
+    }
+
+    .input-require-3danme > span{
+        font-size: .7rem;
+    }
+
+
+
+
+    
+
+    .pdfInputArea{
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+
+        display: -ms-grid;
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows:auto;
+    }
+    .pdfInputArea-cul-1{
+        grid-column: 1 ;
+        grid-row: 1;
+    }
+    .pdfInputArea-cul-2{
+        grid-column: 1 ;
+        grid-row: 2;
+    }
+    .pdfInputArea-cul-3{
+        grid-column: 1 ;
+        grid-row: 3;
+    }
+
+    .select-span-grid-area, #simulation-Table{
+        margin-left: 3px;
+    }
+    .date-picker-button:after{
+        margin-left: .5rem;
+        position: absolute;
+        top:9px;
+    }
+    .date-picker-button{
+        font-size: 1rem;
+    }
+
+    .select-first.one {
+        text-indent: 45px;
+    }
+    .select-first.two {
+        text-indent: 65px;
+    }
+    .select-first.zero {
+        text-indent: 75px;
+    }
+    .content-trash-icon, .content-trash-icon-2{
+        right: initial;
+    }
+    .content-trash-icon-2{
+        top:2.8rem;
+    }
+    .react-datepicker__month .react-datepicker__month-text{
+        width: 3rem;
+    }
+    #preview-1{
+        width: 210mm;
+    }
+
+    /*月額の * */
+    .input-require-3danme::after{
+        top: 0;
+        left: 1.6rem;
+    }   
+}
+
+
+@media(max-width:400px){
+    .simulation-form-upper > div:nth-child(9) > div.input-box-c-1 > div > div{
+        top:12px;
+    }
+    .error-text-mobile{
+        margin-top: -1.7rem;
+    }
+}

@@ -82,17 +82,16 @@ export default class PDF extends Component{
       console.log('チェック　' + name_length );
       console.log('チェック中  ' + salary_length);
 
-      //フォントサイズが異なるため幅が変わる, スマホの場合は p 16px,　プレビューは p 要素をそのまま転用しているのでサイズ指定が変えれない、デフォルトを 14px にすると、他デザインに影響する
       if(this.state.mobileJudge){
-        var text_length = (name_length+20)*13.5 + (salary_length*1.2)*19.5;//width
-        if(text_length<430){
-          text_length = 430;
+        var text_length = (name_length+20)*12 + (salary_length*1.25)*18;//width
+        if(text_length<410){
+          text_length = 410;
         }
         this.setState({text_length:text_length})
       }else{
-        var text_length = (name_length+20)*12 + (salary_length*1.2)*18;//width
-        if(text_length<370){
-          text_length = 370;
+        var text_length = (name_length+20)*12 + (salary_length*1.25)*18;//width
+        if(text_length<410){
+          text_length = 410;
         }
         this.setState({text_length:text_length})
       }
@@ -482,10 +481,10 @@ export default class PDF extends Component{
             <div className="pdf-content-area" >
               <div id="re-html-area-1" style={{width:String(this.state.text_length)+'px'}}>
                 {list_1}
-                <p className="nangatubun">{this.props.data.whenStart}分から適用する。</p>
-                <p>以上同意する。</p>
-                <p className="pdf-footer-date">{this.props.data.resolutionDate}</p>
-                <p>{this.props.data.companyName}</p>
+                <p className="nangatubun ">{this.props.data.whenStart}分から適用する。</p>
+                <p className="">以上同意する。</p>
+                <p className="pdf-footer-date ">{this.props.data.resolutionDate}</p>
+                <p className="">{this.props.data.companyName}</p>
                 {re_list_2}
               </div>
             </div>
@@ -498,8 +497,8 @@ export default class PDF extends Component{
           </div>
         </div>
         
-        {/*<div className="hiddenPreview">*/}
-        <div className="">
+        <div className="hiddenPreview">
+        {/*<div className="">*/}
           <PDFPreview 
             data={this.props} 
             calcData={this.state.calcData} 

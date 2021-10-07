@@ -42,8 +42,8 @@ import trashImg from './../assets/image/trash.svg';
           //console.log(i);
           //console.log(this.props.data.pCount);
           //console.log(this.props.data.pObj[i].className);
-          if((this.props.data.pCount>16&&(this.props.data.pObj[i].className.indexOf('boardObjList')!==-1)) ||
-          (this.props.data.pCount>16&&(this.props.data.pObj[i].className===''))
+          if((this.props.data.pCount>21&&(this.props.data.pObj[i].className.indexOf('boardObjList')!==-1)) ||
+          (this.props.data.pCount>21&&(this.props.data.pObj[i].className===''))
           ){
             if(i==='17'){
               //console.log('p追加1');

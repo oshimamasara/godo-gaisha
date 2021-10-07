@@ -869,6 +869,9 @@ div.pdf-table-area > table > tbody > tr:nth-child(3) > td:nth-child(1){
 
 /* MOBILE */
 @media(max-width:480px){
+    body{
+        -webkit-text-size-adjust: none;
+    }
     .table-top-notification-mark-area{
         margin-left: .5rem;
     }
@@ -1053,9 +1056,13 @@ div.pdf-table-area > table > tbody > tr:nth-child(3) > td:nth-child(1){
     .pdf-preview-title-parent{
         margin-bottom: 4rem;
     }
+    
     #pdf-loop-content-area,
-    #pdf-loop-content-area>div>p{
-        font-size: 16px !important;
+    #pdf-loop-content-area>div>p,
+    #pdf-loop-content-area>div>div>p,
+    .boardObjList-label-1,
+    .font-14{
+        font-size: 14px ;
     }
 }
 

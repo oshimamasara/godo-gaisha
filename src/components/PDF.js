@@ -62,17 +62,15 @@ export default class PDF extends Component{
   render(){
     const showPreview = (event) => {
       //PDF幅
-      var name_length = 0;
-      var salary_length = 0;
+      var name_length = 1;
+      var salary_length = 1;
       for(var i in Object.keys(this.props.data.boardObj)){
-        console.log('チェック　' + this.props.data.boardObj[i].boardName);
         if(typeof this.props.data.boardObj[i].boardName !== 'undefined'){
           var this_name_length = this.props.data.boardObj[i].boardName.length;
           if(name_length<this_name_length){
             name_length = this_name_length;
           }
         }
-        console.log('チェック中  ' + this.props.data.boardObj[i].boardSalary);
         if(typeof this.props.data.boardObj[i].boardSalary!=='undefined'){
           var this_salary_length = this.props.data.boardObj[i].boardSalary.length;
           if(salary_length<this_salary_length){
@@ -80,10 +78,27 @@ export default class PDF extends Component{
           }
         }
       }
-      var text_length = (name_length+20)*12 + (salary_length*1.5)*18;//width
-      console.log((name_length+19)*6 );
-      console.log((salary_length*1.5)*6);
-      this.setState({text_length:text_length})
+
+      console.log('チェック　' + name_length );
+      console.log('チェック中  ' + salary_length);
+
+      //フォントサイズが異なるため幅が変わる, スマホの場合は p 16px,　プレビューは p 要素をそのまま転用しているのでサイズ指定が変えれない、デフォルトを 14px にすると、他デザインに影響する
+      if(this.state.mobileJudge){
+        var text_length = (name_length+20)*13.5 + (salary_length*1.2)*19.5;//width
+        if(text_length<430){
+          text_length = 430;
+        }
+        this.setState({text_length:text_length})
+      }else{
+        var text_length = (name_length+20)*12 + (salary_length*1.2)*18;//width
+        if(text_length<370){
+          text_length = 370;
+        }
+        this.setState({text_length:text_length})
+      }
+      console.log('チェック中  ' + text_length);
+
+
       //if(text_length<=12){
       //  var text_length_paramerter = 4.2;
       //}else if(text_length<15){
@@ -483,8 +498,8 @@ export default class PDF extends Component{
           </div>
         </div>
         
-        <div className="hiddenPreview">
-        {/*<div className="">*/}
+        {/*<div className="hiddenPreview">*/}
+        <div className="">
           <PDFPreview 
             data={this.props} 
             calcData={this.state.calcData} 

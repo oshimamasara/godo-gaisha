@@ -522,7 +522,7 @@ input[type="number"] , .input-number{
 .commpayObjList{
     display: flex;
     margin: 1rem 0;
-    margin-left: 50%;
+    margin-left: 65%;
     white-space: nowrap;
 }
 .pdf-footer-date{
@@ -978,17 +978,13 @@ div.pdf-table-area > table > tbody > tr:nth-child(3) > td:nth-child(1){
         margin-right: 1.2rem;
     }
 
-    .simulation-form-upper > div:nth-child(8) > div.input-box-c-1 > div > div,
-    .simulation-form-upper > div:nth-child(10) > div.input-box-c-1 > div > div,
-    .simulation-form-upper > div:nth-child(19) > div.input-box-c-1 > div > div{
+    .simulation-form-upper > div:nth-child(3) > div.input-box-c-1 > div > div{
         right: -16px;
     }
 
     .input-require-3danme > span{
         font-size: .7rem;
     }
-
-
 
 
     
@@ -1053,6 +1049,14 @@ div.pdf-table-area > table > tbody > tr:nth-child(3) > td:nth-child(1){
         top: 0;
         left: 1.6rem;
     }   
+
+    .pdf-preview-title-parent{
+        margin-bottom: 4rem;
+    }
+    #pdf-loop-content-area,
+    #pdf-loop-content-area>div>p{
+        font-size: 16px !important;
+    }
 }
 
 

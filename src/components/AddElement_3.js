@@ -45,12 +45,12 @@ import trashImg from './../assets/image/trash.svg';
           if((this.props.data.pCount>16&&(this.props.data.pObj[i].className.indexOf('boardObjList')!==-1)) ||
           (this.props.data.pCount>16&&(this.props.data.pObj[i].className===''))
           ){
-            if(i==='12'){
+            if(i==='17'){
               //console.log('p追加1');
               list.push( <p key={'loopContent_'+i} className="pdf-page-break-margin"></p> );
             }
           }else if(this.props.data.pCount<15){
-            if(i==='10'){
+            if(i==='15'){
               //console.log('p追加2');
               list.push( <p key={'loopContent_'+i} className="pdf-page-break-margin"></p> );
             }

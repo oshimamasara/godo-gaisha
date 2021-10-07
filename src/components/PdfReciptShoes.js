@@ -37,7 +37,7 @@ const PdfReciptShoes = ({text, rootElementId , downloadFileName, data, pCount}) 
               while (heightLeft >= 0) {
                 position = heightLeft - imgHeight;
                 ////console.dir(data);
-                if(pCount>11){
+                if(pCount>17){
                   //console.log('ページ追加');
                   pdf.addPage();
                   pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight, undefined,'FAST');

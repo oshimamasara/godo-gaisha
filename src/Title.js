@@ -16,7 +16,7 @@ import parse from 'html-react-parser';
         this.setState({ margin:String(margin) });
       }else if (navigator.userAgent.match(/iPhone.+Mobile/)) {
         this.setState({ title:parse('WEB完結｜<br>合同会社の役員報酬を決議する議事録｜雛形') });
-        var margin = (window.innerWidth - 350)/2;
+        var margin = (window.innerWidth - 338)/2;
         //console.log('iPhone');
         //console.log(margin);
         this.setState({ margin:String(margin) });

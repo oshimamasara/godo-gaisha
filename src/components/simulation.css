@@ -509,8 +509,9 @@ input[type="number"] , .input-number{
 }
 */
 .boardObjList-label-1{
-    display: grid;
-    grid-template-columns: 1fr 5fr;
+    /*display: grid;
+    grid-template-columns: 1fr 5fr;*/
+    display: flex;
     white-space: nowrap;
     margin-bottom:.3rem;
 }
@@ -522,6 +523,7 @@ input[type="number"] , .input-number{
     display: flex;
     margin: 1rem 0;
     margin-left: 50%;
+    white-space: nowrap;
 }
 .pdf-footer-date{
     margin-top: 2rem;

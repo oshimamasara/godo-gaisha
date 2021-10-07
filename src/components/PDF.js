@@ -65,9 +65,12 @@ export default class PDF extends Component{
       var name_length = 0;
       var salary_length = 0;
       for(var i in Object.keys(this.props.data.boardObj)){
-        var this_name_length = this.props.data.boardObj[i].boardName.length;
-        if(name_length<this_name_length){
-          name_length = this_name_length;
+        console.log('チェック　' + this.props.data.boardObj[i].boardName);
+        if(typeof this.props.data.boardObj[i].boardName !== 'undefined'){
+          var this_name_length = this.props.data.boardObj[i].boardName.length;
+          if(name_length<this_name_length){
+            name_length = this_name_length;
+          }
         }
         console.log('チェック中  ' + this.props.data.boardObj[i].boardSalary);
         if(typeof this.props.data.boardObj[i].boardSalary!=='undefined'){
@@ -464,7 +467,7 @@ export default class PDF extends Component{
             <div className="pdf-content-area" >
               <div id="re-html-area-1" style={{width:String(this.state.text_length)+'px'}}>
                 {list_1}
-                <p className="nangatubun">{this.props.data.whenStart}分から適用する</p>
+                <p className="nangatubun">{this.props.data.whenStart}分から適用する。</p>
                 <p>以上同意する。</p>
                 <p className="pdf-footer-date">{this.props.data.resolutionDate}</p>
                 <p>{this.props.data.companyName}</p>

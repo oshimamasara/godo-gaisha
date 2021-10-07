@@ -435,7 +435,8 @@ input[type="number"] , .input-number{
     width: 62%;
 }
 .pdf-loop-content-area{
-   
+    margin-left: auto;
+    margin-right: auto;
 }
 .preview-label{
     position: absolute;
@@ -510,9 +511,11 @@ input[type="number"] , .input-number{
 .boardObjList-label-1{
     display: grid;
     grid-template-columns: 1fr 5fr;
+    white-space: nowrap;
+    margin-bottom:.3rem;
 }
 .boardObjList-label-1 > div:nth-child(2){
-    text-align: right;
+    /*text-align: right;*/
     padding-right: .3rem;
 }
 .commpayObjList{
@@ -522,6 +525,7 @@ input[type="number"] , .input-number{
 }
 .pdf-footer-date{
     margin-top: 2rem;
+    margin-bottom: .3rem;
 }
 .commpayObjList > div:nth-child(1){
     min-width: 80px;
@@ -543,6 +547,9 @@ input[type="number"] , .input-number{
 
 
 .rowEnd{
+    margin-bottom: 1rem;
+}
+.nangatubun{
     margin-bottom: 3rem;
 }
 

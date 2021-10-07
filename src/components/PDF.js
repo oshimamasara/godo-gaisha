@@ -8,7 +8,7 @@ import { functionFields } from "./MyFunction";
 import './simulation.css';
 import logoImage from './../assets/image/base_logo.png';
 import inkanImage from './../assets/image/inkan.png';
-
+import parse from 'html-react-parser';
 
 export default class PDF extends Component{
   state={
@@ -20,6 +20,8 @@ export default class PDF extends Component{
     pCount:0,
     pObj:{},
     ceoName:'',
+    text_length:0,
+    text_length_paramerter:1,
   }
 
   
@@ -43,6 +45,7 @@ export default class PDF extends Component{
           this.setState({ceoName:ceo[element].boardName});
         }
       });
+
     }
 
     if(this.props.data.boardObj!==prevProps.data.boardObj ||
@@ -58,6 +61,39 @@ export default class PDF extends Component{
 
   render(){
     const showPreview = (event) => {
+      //PDF幅
+      var name_length = 0;
+      var salary_length = 0;
+      for(var i in Object.keys(this.props.data.boardObj)){
+        var this_name_length = this.props.data.boardObj[i].boardName.length;
+        if(name_length<this_name_length){
+          name_length = this_name_length;
+        }
+        console.log('チェック中  ' + this.props.data.boardObj[i].boardSalary);
+        if(typeof this.props.data.boardObj[i].boardSalary!=='undefined'){
+          var this_salary_length = this.props.data.boardObj[i].boardSalary.length;
+          if(salary_length<this_salary_length){
+            salary_length = this_salary_length;
+          }
+        }
+      }
+      var text_length = (name_length+20)*12 + (salary_length*1.5)*18;//width
+      console.log((name_length+19)*6 );
+      console.log((salary_length*1.5)*6);
+      this.setState({text_length:text_length})
+      //if(text_length<=12){
+      //  var text_length_paramerter = 4.2;
+      //}else if(text_length<15){
+      //  var text_length_paramerter = 3;
+      //}else if(text_length>=15){
+      //  var text_length_paramerter = 2.8;
+      //}
+      ////if(text_length_paramerter){
+////
+      ////}
+      //this.setState({text_length_paramerter:text_length_paramerter})
+
+
       var stepJudge_0 = true;//役員報酬　役職
       var stepJudge_00 = true;//出席社員　役職
       var stepJudge_1 = true;//役員報酬　名前
@@ -300,6 +336,7 @@ export default class PDF extends Component{
 
     var c = 0;
     var list_1 = [];
+    
     //for(var i in Object.keys(this.props.data.boardObj)){
     list_0.forEach(i => {
       if(this.props.data.boardObj[i].boardPosition==='ceo'){
@@ -317,13 +354,11 @@ export default class PDF extends Component{
       }
       
       var lastStyle= '';
+      //var lastRowText = '';
       if(Object.keys(this.props.data.boardObj).length-1 ===Number(c)){
         var lastStyle= 'rowEnd';
+        //var lastRowText = parse('<p>'+ this.props.data.whenStart +'分から適用する</p>');
       }
-
-      var text_length = (boardPosition + this.props.data.boardObj[i].boardName + boardSalary).length;
-        console.log(text_length);
-        //文字数に応じて幅を変えたい
       
       list_1.push(<div className={`boardObjList-label-1 ${lastStyle}`} key={i} >
           <div>
@@ -427,9 +462,9 @@ export default class PDF extends Component{
             </div>
             
             <div className="pdf-content-area" >
-              <div id="re-html-area-1">
+              <div id="re-html-area-1" style={{width:String(this.state.text_length)+'px'}}>
                 {list_1}
-
+                <p className="nangatubun">{this.props.data.whenStart}分から適用する</p>
                 <p>以上同意する。</p>
                 <p className="pdf-footer-date">{this.props.data.resolutionDate}</p>
                 <p>{this.props.data.companyName}</p>
@@ -446,6 +481,7 @@ export default class PDF extends Component{
         </div>
         
         <div className="hiddenPreview">
+        {/*<div className="">*/}
           <PDFPreview 
             data={this.props} 
             calcData={this.state.calcData} 
@@ -453,6 +489,7 @@ export default class PDF extends Component{
             pCount={this.state.pCount} 
             ceoName={this.state.ceoName} 
             pObj={this.state.pObj}
+            contentWidth={this.state.text_length}
           />
         </div>
 
